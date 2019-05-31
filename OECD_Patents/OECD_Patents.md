@@ -1,8 +1,9 @@
 # OECD Patents
 Used in Briggs paper - database of 5.2 million patents
-Can we use this to measure health IT innovation over time?
-Policy impact on innovation???
-https://www.tandfonline.com/eprint/CQHFFueSjVv2tE7ztC8t/full?target=10.1080/13571516.2018.1438873
+- Can we use this to measure health IT innovation over time?
+- Policy impact on innovation???
+- https://www.tandfonline.com/eprint/CQHFFueSjVv2tE7ztC8t/full?target=10.1080/13571516.2018.1438873
+
 ## An Analysis of Technologically Radical Innovation and Breakthrough Patents
 
 ### Abstract
