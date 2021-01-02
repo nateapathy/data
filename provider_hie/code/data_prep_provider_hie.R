@@ -1,9 +1,7 @@
-#### State HIE Consent Policies and Amount of Health Information Exchange #####
-# Code for data setup and analysis
+#### Practice & Market Factors Related to Provider HIE Levels #####
+# Code for data setup
 # Nate Apathy
 # November 20, 2019
-# Abstract submitted to AcademyHealth ARM January 2020
-# Meaningful Use data, PQRS physician data, state HIE consent policy data
 
 # load libraries
 library(pacman)
@@ -207,8 +205,6 @@ table(interop_mu_df$vendor2)
 
 
 ################### AHRF 2016
-# yikes... this is going to be a pain to get apparently for past years
-# we have 2017-2018 ahrf so we will use that in the meantime
 
 # see ahrf2018.R
 # ahrf_18_cut is the data frame we want, which has been saved as ahrf_18_cut.Rdata
@@ -607,10 +603,7 @@ table(analysis_dat$sys_memb_flag,analysis_dat$practice_size,exclude = F)
 analysis_dat %>% filter(mu_provider==1 & exclusion=="N" & pcp_flag==1 & used_ehr=="Y") %>%
   group_by(sys_memb_flag,practice_size) %>% summarize(count=n_distinct(npi))
 
-###### number of exchange partners in ... HSA? HRR? PCSA? what market def?
-#### ideally would be a zip code radius of drive time but alas...
 # count of specialists who reported to MU on this measure, indicating ability to recieve eSCR
-# is this in the raw MU data?
 
 # which specialties are viable exchange partners
 # e.g. not anesthesiologists or nurse practitioners
